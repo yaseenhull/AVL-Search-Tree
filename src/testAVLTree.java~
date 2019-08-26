@@ -1,0 +1,26 @@
+//Junit insert test
+//Yaseen Hull
+//23 April March
+
+import org.junit.Test;
+import org.junit.Assert;
+import static org.junit.Assert.*;
+
+
+public class testAVLTree
+{
+	public void testInsert()
+	{
+		AVLTree<String> bt = new AVLTree<String> ();
+		
+		bt.insert("Casper Jayce","78637 Florida Cliffs, Blythe|(234)229-3444|Casper Jayce");
+		bt.insert("kub Heloise","45372 Penthouse, Jasper|(321)417-1788|Kub Heloise");
+		bt.insert("Green Ahmed","01280 Lynch Stravenue Suite 978, Fullerton|626.816.6248|Green Ahmed");
+		bt.insert("Wolf Mariane","98289 Alexander Pine #571, Walnut|955.747.0624 x2156|Wolf Mariane");
+		bt.insert("Smitham Janice","23754 Stop R, Anchorage|689.739.7835 x73464|Smitham Janice");
+		
+		assertEquals("01280 Lynch Stravenue Suite 978, Fullerton|626.816.6248|Green Ahmed", bt.SearchAVL("Green Ahmed"));
+		
+		
+	}
+}
